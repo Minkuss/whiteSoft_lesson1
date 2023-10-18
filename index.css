@@ -5,39 +5,41 @@
   src: url('fonts/Inter-V.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* height: 100%; */
   background: #F1F9FD
 }
 
-.header_img {
+.header__img {
   width: 200px;
   height: 40px;
 }
 
-.header_info {
+.header__info {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.header_info_h1 {
+.header__info h1 {
   color: #000;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: -0.48px;
+  letter-spacing: -0.02em;
   margin-top: 32px;
 }
 
-.header_info_span {
-   color: #000;
+.header__info span {
+  color: #000;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -52,18 +54,17 @@ body {
   align-items: center;
 }
 
-.main_card {
+.main__card {
   display: flex;
   flex-direction: column;
-  align-items: start;
   border-radius: 12px;
   background: #FFF;
-  width: 327px;
-  padding: 24px 0 24px 24px;
+  width: fit-content;
+  padding: 24px;
   margin-top: 24px;
 }
 
-.main_card_h2 {
+.main__card h2 {
   color: #000;
   font-family: Inter;
   font-size: 18px;
@@ -74,12 +75,19 @@ body {
   max-width: 200px;
 }
 
-.main_card_ul {
+.main__card ul {
   list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125em;
+  padding-top: 24px;
 }
 
-.main_card_ul_span {
+.main__card ul li {
+  display: flex;
+}
+
+.main__card ul li span {
   color: #000;
   font-family: Inter;
   font-size: 14px;
@@ -92,7 +100,7 @@ body {
   padding-left: 8px;
 }
 
-.main_card_ul_span-last {
+.main__card ul li:nth-child(3) span {
   color: #000;
   font-family: Inter;
   font-size: 14px;
@@ -105,12 +113,12 @@ body {
   padding-left: 8px;
 }
 
-.main_card_ul li {
+.main__card__ul li {
   display: flex;
   padding-top: 18px;
 }
 
-.main_button {
+.main__a--animated {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
@@ -126,13 +134,19 @@ body {
   width: 325px;
   padding: 20px 30px;
   margin-top: 36px;
+  transition: 1s;
 }
 
-.main_button:hover {
+.main__a--animated:hover {
   background: #413F8B;
 }
 
-.main_a {
+.main__a--animated:active {
+  width: calc(325px - 5%);
+  transition: 0s;
+}
+
+.main__a {
   all: unset;
   color: #514FAE;
   font-family: Inter;
@@ -145,7 +159,7 @@ body {
   margin-top: 24px;
 }
 
-.main_apps {
+.main__apps {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -153,15 +167,15 @@ body {
   margin-top: 24px;
 }
 
-.main_apps img {
+.main__apps img {
   width: 135px;
   height: 38px;
 }
 
-.main_apps_wrapper {
+.main__apps div {
   display: flex;
 }
 
-.main_apps-google {
+.main__apps-google {
   padding-left: 16px;
 }

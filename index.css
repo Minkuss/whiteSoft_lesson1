@@ -113,7 +113,7 @@ body {
   padding-left: 8px;
 }
 
-.main__card__ul li {
+.main__card ul li {
   display: flex;
   padding-top: 18px;
 }
@@ -176,6 +176,6 @@ body {
   display: flex;
 }
 
-.main__apps-google {
+.main__apps--google {
   padding-left: 16px;
 }

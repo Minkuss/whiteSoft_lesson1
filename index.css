@@ -13,8 +13,9 @@ body {
   flex-direction: column;
   align-items: center;
   background: #F1F9FD;
-  /* надеюсь так правильно делать падинги*/
+  max-width: 375px;
   padding: 32px 24px 32px 24px;
+  margin: 0 auto;
 }
 
 .header__img {
@@ -53,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .main__card {
@@ -61,9 +63,9 @@ body {
   border-radius: 12px;
   background: #FFF;
   width: 100%;
-  /* width: fit-content; */
   padding: 24px;
   margin-top: 24px;
+  box-sizing: border-box;
 }
 
 .main__card h2 {
@@ -133,12 +135,10 @@ body {
   line-height: 120%;
   letter-spacing: -0.32px;
   text-align: center;
-  /* Жесткое значение ширины убрал,
-  понял что тупо сделал)))
-  */
   padding: 20px 30px;
   margin-top: 36px;
   transition: 1s;
+  align-self: stretch;
 }
 
 .main__a--animated:hover {
@@ -146,10 +146,6 @@ body {
 }
 
 .main__a--animated:active {
-  /* не понял коммента про падинг
-  на внешний контейнер тут, но
-  размер изменил как посоветовали
-  */
   transform: scale(0.95);
   transition: 0s;
 }

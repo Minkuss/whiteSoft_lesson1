@@ -12,8 +12,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 100%; */
-  background: #F1F9FD
+  background: #F1F9FD;
+  /* надеюсь так правильно делать падинги*/
+  padding: 32px 24px 32px 24px;
 }
 
 .header__img {
@@ -59,7 +60,8 @@ body {
   flex-direction: column;
   border-radius: 12px;
   background: #FFF;
-  width: fit-content;
+  width: 100%;
+  /* width: fit-content; */
   padding: 24px;
   margin-top: 24px;
 }
@@ -131,7 +133,9 @@ body {
   line-height: 120%;
   letter-spacing: -0.32px;
   text-align: center;
-  width: 325px;
+  /* Жесткое значение ширины убрал,
+  понял что тупо сделал)))
+  */
   padding: 20px 30px;
   margin-top: 36px;
   transition: 1s;
@@ -142,7 +146,11 @@ body {
 }
 
 .main__a--animated:active {
-  width: calc(325px - 5%);
+  /* не понял коммента про падинг
+  на внешний контейнер тут, но
+  размер изменил как посоветовали
+  */
+  transform: scale(0.95);
   transition: 0s;
 }
 

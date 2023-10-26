@@ -14,8 +14,15 @@ body {
   align-items: center;
   background: #F1F9FD;
   max-width: 375px;
-  padding: 32px 24px 32px 24px;
+  padding: 32px 24px;
   margin: 0 auto;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .header__img {
@@ -37,7 +44,6 @@ body {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -0.02em;
-  margin-top: 32px;
 }
 
 .header__info span {
@@ -55,6 +61,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 24px;
 }
 
 .main__card {
@@ -64,7 +71,7 @@ body {
   background: #FFF;
   width: 100%;
   padding: 24px;
-  margin-top: 24px;
+  gap: 24px;
   box-sizing: border-box;
 }
 
@@ -83,12 +90,12 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.125em;
-  padding-top: 24px;
+  gap: 12px;
 }
 
 .main__card ul li {
   display: flex;
+  gap: 8px;
 }
 
 .main__card ul li span {
@@ -101,7 +108,6 @@ body {
   letter-spacing: -0.28px;
   max-width: 150px;
   align-self: center;
-  padding-left: 8px;
 }
 
 .main__card ul li:nth-child(3) span {
@@ -114,15 +120,9 @@ body {
   letter-spacing: -0.28px;
   max-width: 200px;
   align-self: center;
-  padding-left: 8px;
 }
 
-.main__card ul li {
-  display: flex;
-  padding-top: 18px;
-}
-
-.main__a--animated {
+.main__btn {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
@@ -136,21 +136,21 @@ body {
   letter-spacing: -0.32px;
   text-align: center;
   padding: 20px 30px;
-  margin-top: 36px;
+  margin-top: 12px;
   transition: 1s;
   align-self: stretch;
 }
 
-.main__a--animated:hover {
+.main__btn:hover {
   background: #413F8B;
 }
 
-.main__a--animated:active {
+.main__btn:active {
   transform: scale(0.95);
   transition: 0s;
 }
 
-.main__a {
+.main__link {
   all: unset;
   color: #514FAE;
   font-family: Inter;
@@ -160,26 +160,18 @@ body {
   line-height: 120%;
   letter-spacing: -0.32px;
   cursor: pointer;
-  margin-top: 24px;
 }
 
 .main__apps {
   list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
 }
 
 .main__apps img {
   width: 135px;
   height: 38px;
-}
-
-.main__apps div {
-  display: flex;
-}
-
-.main__apps--google {
-  padding-left: 16px;
 }

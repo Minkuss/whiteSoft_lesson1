@@ -123,7 +123,21 @@ body {
   align-self: center;
 }
 
-.main__btn {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.main__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.main__btns a {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
@@ -137,21 +151,20 @@ body {
   letter-spacing: -0.32px;
   text-align: center;
   padding: 20px 30px;
-  margin-top: 12px;
   transition: 1s;
   align-self: stretch;
 }
 
-.main__btn:hover {
+.main__btns a:hover {
   background: #413F8B;
 }
 
-.main__btn:active {
+.main__btns a:active {
   transform: scale(0.95);
   transition: 0s;
 }
 
-.main__link {
+.main__btns a:last-child {
   all: unset;
   color: #514FAE;
   font-family: Inter;
@@ -172,7 +185,10 @@ body {
   gap: 8px 16px;
 }
 
+.main__apps a {
+  height: 38px;
+}
+
 .main__apps img {
   width: 135px;
-  height: 38px;
 }

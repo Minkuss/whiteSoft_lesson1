@@ -1,1 +1,0 @@
-# whiteSoft_lesson1
